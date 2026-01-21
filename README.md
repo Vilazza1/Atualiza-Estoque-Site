@@ -48,9 +48,13 @@ SQL Server
 API Shoppub / UniversoPet
 
 📂 Estrutura do Projeto
+
 Atualiza-Estoque-Site/
+
 │
+
 ├── UniversoPet.py      # Script principal
+
 ├── README.md           # Documentação
 
 ⚙️ Configuração
@@ -234,7 +238,9 @@ SQL_CONN_STR = (
 )
 
 4️⃣ Endpoints utilizados
+
 URL_LISTAR_PRODUTOS = "https://www.universopet.net.br/api/v1/produtos/"
+
 URL_ATUALIZAR_PRODUTOS = "https://www.universopet.net.br/api/v1/produtos"
 
 ▶️ Execução
@@ -316,3 +322,4 @@ Desenvolido por Vinicius Vilaça
 Desenvolvido para uso interno – UniversoPet
 
 Automação de estoque via API Shoppub
+
