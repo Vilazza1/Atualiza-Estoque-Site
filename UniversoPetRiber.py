@@ -19,6 +19,7 @@ URL_ATUALIZAR_PRODUTOS = "colcoar a url de atualização de produtos aqui"
 LIMITE_POR_ENVIO = 50
 DELAY_ENTRE_LOTES = 1
 
+
 # =========================
 # CONFIGURAÇÕES SQL
 # =========================
@@ -58,7 +59,7 @@ def consultar_saldo_empresa_2(conn, nome):
     cursor.execute("""
         SELECT SUM(SALDO)
         FROM BL_MASTER.dbo.VIEW_PRODUTOS_DW
-        WHERE ID_EMPRESA = 2
+        WHERE ID_EMPRESA = 1
           AND CONVERT(NVARCHAR(MAX), NM_ORIGINAL) LIKE ?
     """, ('%' + nome + '%',))
 
@@ -107,8 +108,7 @@ def main():
                 "nome": nome
             })
 
-    conn.close()
-
+    conn.close() 
     if not produtos_para_atualizar:
         print("✅ Nenhum produto precisou ser atualizado.")
         return
