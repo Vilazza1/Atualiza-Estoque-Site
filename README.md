@@ -73,9 +73,6 @@ HEADERS = {
     "content-type": "application/json"
 }
 
-
-⚠️ Nunca versionar o token em repositórios públicos.
-
 3️⃣ Configurar SQL Server
 
 SQL_CONN_STR = (
